@@ -1,1 +1,1 @@
-loadstring(game:HttpGet(('https://www.potato-hub.com/PotatoHub.lua'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt'),true))()
