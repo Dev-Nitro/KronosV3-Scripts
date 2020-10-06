@@ -1,7 +1,8 @@
-local old
-old = hookfunction(game.HttpGetAsync, function(inst, url, state)
-  url = url:gsub('CriShoux', 'SiLeNSwOrD')
-  return old(inst, url, state)
-end)
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
+getgenv().HttpGet = function(game, aa)
+    aa = aa:gsub('CriShoux', 'SiLeNSwOrD')
+    settrustcheck(aa)
+    local old = setndm(3)
+    local ret = HttpGetAsync(game, aa, 0)
+    setndm(old)
+    return ret
+end
